@@ -1,0 +1,81 @@
+html{
+    width: 100vw;
+    font: 1.2em Times;
+}
+
+body{
+    display: grid;
+    grid-template: 100px 1fr 0.25fr/2fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    text-align: center;
+}
+
+header{
+    background-color: gray;
+    grid-area: header;
+}
+
+main{
+    background-color: gold;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "article aside";
+}
+
+article{
+    grid-area: article;
+    display: grid;
+    grid-template: 3fr 1fr 1fr/1fr 1fr;
+    grid-template-areas: 
+    "article_name article_name"
+    "info1 info2"
+    "info3 info3";
+    grid-gap: 1vw;
+}
+
+#article_name{
+    grid-area: article_name
+}
+
+.info{
+    background-color: goldenrod;
+    height: 5vh;
+    margin: 1vh
+}
+#info1{
+    grid-area: info1;
+}
+#info2{
+    grid-area: info2;
+}
+#info3{
+    grid-area: info3;
+}
+
+aside{
+    background-color: green;
+    grid-area: aside;
+}
+
+footer{
+    background-color: gray;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.section_footer{
+    background-color: white;
+    width: auto;
+    height: auto;
+    justify-items: center;
+    margin: 1vh;
+}

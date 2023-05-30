@@ -1,0 +1,67 @@
+@media screen and (min-width:1024px) {
+    #topbar{
+        width: 100vw;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #topbar{
+        width: 100vw;
+    }
+    .header_nav{
+        display: grid;
+        grid-template-columns: 20vw 80vw;
+        grid-template-areas: "logo nav_link";
+        padding: 10px 2% 10px 2%;
+    }
+
+    #logo{
+        width: 80%;
+        margin: auto
+    }
+
+    /*1 раздел*/
+    .start_page{
+        grid-template-columns: 70% 30%;
+    }
+
+    .start_page p{
+        max-width: 80%;
+    }
+
+    /*картинка улетела сильно за пределы*/
+}
+
+@media screen and (max-width:767px) {
+    #topbar{
+        height: 10px;
+    }
+
+    .header_nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav_link a{
+        display: none;
+    }
+
+    #quick_nav{
+        display: contents;
+    }
+
+    .start_page{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .start_page img{
+        width: 100vw;
+    }
+
+    .plan{
+        display: flex;
+        flex-direction: column;
+    }
+}
