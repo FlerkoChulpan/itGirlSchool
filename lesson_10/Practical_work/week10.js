@@ -170,6 +170,14 @@ function calculateAge() {
 console.log(calculateAge());
 //Задание 17
 // Напишите функцию которая принимает ваш год рождения и возвращает ваш возраст. Обратите ваше внимание, что в глобальной зоне видимости есть переменная с текущим годом.
+const yearOfBirth = 1999;
+const age = calculateAge(yearOfBirth);
+
+console.log(age);
 
 //Задание 18
 // Напишите функцию, которая должна возводить число в заданную степень. Результат должен выводить в консоль в формате: console.log("Результат: " + result);
+function exponentiation(number, power) {
+	let result = Math.pow(number, power);
+	console.log("Результат: " + result);
+}
