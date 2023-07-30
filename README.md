@@ -1,2 +1,2 @@
 # itGirlSchool
-Education in IT GirlSchool. Start: March 27, 2023. Learning paused in this school.
+Education at IT GirlSchool. Start: March 27, 2023. Learning paused at this school.
